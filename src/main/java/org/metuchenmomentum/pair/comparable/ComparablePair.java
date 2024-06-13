@@ -25,4 +25,17 @@ public class ComparablePair<T extends Comparable<T>> implements Comparable<Compa
         ? this.right.compareTo(compareTo.right)
         : result;
   }
+
+  public T left() {
+    return left;
+  }
+
+  public T right() {
+    return right;
+  }
+
+  @Override
+  public String toString() {
+    return left.toString() + ", " + right.toString();
+  }
 }
